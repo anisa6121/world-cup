@@ -25,11 +25,11 @@ main {
 }
 
 
-/* top-banner and player style */
+/* top-banner and player image style */
 .header {
 
-    height: 80vh;
-    width: 1100px;
+   max-height: 700px;
+     width: 98%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.779);
     transition: width 1s;
@@ -89,7 +89,7 @@ h1 {
     height: 85vh;
 }
 
-/* latest parts style */
+/* latest parts and flag style */
 .button {
     background-color: rgba(0, 0, 0, 0.779);
     width:40%;
@@ -177,10 +177,10 @@ h1 {
   }
 
 
-/* footer style  */
+/* footer and icon style  */
 footer {
-    background-color: black;
-    height: 60vh;
+    background-color:steelblue ;
+    height: 700px;
 
 }
 
@@ -222,4 +222,151 @@ hr {
 .fa-brands {
     color: white;
 
+}
+
+/* media queries */
+
+
+/* mobile devices */
+
+@media only screen and (max-width:688px) {
+
+    .container {
+            width: 80%;
+    
+        }
+    
+        .header {
+            height: 650px;
+    
+            display: flex;
+            flex-direction: column;
+    }
+
+         .half-width {
+             width: 100%;
+         }
+        .fa-solid {
+            margin-left: 12px;
+        }
+    
+         .player {
+             margin-top: 40px;
+             position: relative;
+             max-height: 900px;
+             width: 100%;
+         }
+    
+         .player img {
+             height: 88%;
+    
+     }
+
+         .button {
+             background-color: white;
+             width: 250px;
+             height: 270px;
+             border-radius: 9px;
+             margin-left: auto;
+             margin-right: auto;
+             margin-bottom: 10%;
+    
+         }
+.flex-container {
+
+    flex-direction: column;
+
+}
+
+.flag-article{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.flags-image img {
+    width: 180px;
+    height: 70px;
+}
+
+
+
+   footer {
+
+
+       background-color:steelblue ;
+       height: 700px;
+
+   }
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+
+}
+
+
+
+.footer-link a {
+    text-decoratio: none;
+    color: white;
+    margin-left: 4%;
+    margin-top: 6%;
+}
+
+}
+
+/* tablet device */
+@media only screen and (min-width:688px) and (max-width:768px) {
+
+    .container {
+        width: 80%;
+    }
+
+      .header {
+ max-height: 810px;
+        
+     display: flex;
+    }
+
+        .player img {
+           
+            width: 99%;
+        }
+                     
+
+
+
+
+         .button {
+             background-color: white;
+             width: 250px;
+             height: 270px;
+             border-radius: 9px;
+             margin-left: auto;
+             margin-right: auto;
+             margin-bottom: 10%;
+    
+    
+         }
+
+        .flex-container {
+    
+    
+            flex-direction: column;
+    
+        }
+       .flag-article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        footer {
+         display: flex;
+          flex-direction: column;
+        height: 500px;
+        
+            }
+
+}
 }
